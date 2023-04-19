@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Especificidade</title>
+    <style>
+      .destaque {
+        color: red;
+      }
+      p {
+        color: rgb(0, 0, 0);
+      }
+      p.destaque{
+        color: orange;
+      }
+      p[lang]{
+        color: green;
+      }
+      #unico{
+        color: blue;
+      }
+
+      #jumbotron{
+        background: rgba(0,0,0,0.5);
+      }
+      #jumbotron p{
+        color: white;
+      }
+      p{
+        color: red;
+      }
+      .jumbotron-title{
+        color: red;
+      }
+      .jumbotron-text{
+        font-size: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Meu CSS não funciona</h1>
+
+    <div id="jumbotron">
+      <h2 class="jumbotron-title">subtitulo</h2>
+      <p class="jumbotron-text">paragrafos</p>
+      <p class="jumbotron-text">paragrafos</p>
+    </div>
+
+    <p>Estilo inline</p>
+
+    <p lang="pt-br" class="destaque">Testando atributo</p>
+
+    <p class="destaque">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam placeat
+      ad accusantium aliquam magni quasi debitis quo officia, sed, obcaecati
+      quam minus veniam nesciunt. Perferendis, soluta quis. Reprehenderit,
+      dolorum. Ullam?
+    </p>
+    <p class="destaque" id="unico">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis est
+      repellendus itaque fugit odit obcaecati, minus eos reiciendis. Minima,
+      voluptatem nulla numquam qui laboriosam voluptates voluptate impedit
+      nesciunt aut distinctio?/p>
+    </p>
+    <p class="destaque">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis est
+      repellendus itaque fugit odit obcaecati, minus eos reiciendis. Minima,
+      voluptatem nulla numquam qui laboriosam voluptates voluptate impedit
+      nesciunt aut distinctio?/p>
+    </p>
+  </body>
+</html>

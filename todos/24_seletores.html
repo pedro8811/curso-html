@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    article:nth-child(1) a{
+      color: red;
+    }
+    article:nth-child(3) > p{
+      color: red;
+    }
+    article:nth-child(5) h3 + p{
+      margin-top: 50px;
+    }
+    article:nth-child(7) h3 ~ p{
+      color: orange;
+    }
+    article:not(.destaque){
+      color: orange;
+    }
+    .destaque{
+      background-color: yellow;
+    }
+    a[href="#"]{
+     opacity: .2;
+    }
+    a[href^="http"]{
+      color: red;
+    }
+    a[title]{
+      color: green;
+    }
+    a[href$=".pdf"]{
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <article>
+    <h3>
+      título
+    </h3>
+    <p>parágrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    <p>parágrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    <p>parágrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+  </article>
+
+  <hr>
+
+  <article>
+    <h3>
+      título
+    </h3>
+    <p>parágrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    <p>parágrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    <p>parágrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+  </article>
+
+  <hr>
+
+  <article>
+    <h3>
+      título
+    </h3>
+    <p>parágrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    <p>parágrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    <p>parágrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+  </article>
+
+  <hr>
+
+  <article>
+    <p>antes do titulo</p>
+    <h3>
+      título
+    </h3>
+    <p>parágrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    <p>parágrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    <p>parágrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+  </article>
+
+  <hr>
+
+  <article class="destaque">
+    <p>antes do titulo</p>
+    <h3>
+      título
+    </h3>
+    <p>parágrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    <p>parágrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+    <p>parágrafo <a href="#">apenas um link com <b>negrito</b></a></p>
+  </article>
+
+  <ul>
+    <li><a href="#">link falso</a></li>
+    <li><a href="#">link falso</a></li>
+    <li>
+      <a 
+        title="veja exercicio anterior"
+        href="http://serfrontend.com" 
+        target="_blank">
+        link externo
+      </a>
+    </li>
+    <li>
+      <a 
+        title="veja exercicio anterior"
+        href="http://serfrontend.com/qq.pdf" 
+        target="_blank">
+        link externo
+      </a>
+    </li>
+    <li><a href="linkinterno.html">link interno</a></li>
+  </ul>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+</body>
+</html>

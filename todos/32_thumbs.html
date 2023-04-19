@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html, body{
+      font-family: sans-serif;
+      text-align: center;
+    }
+    a{
+      display: block;
+      margin: 10px;
+      position: relative;
+    }
+    a img{
+      width: 100%;
+      display: block;
+    }
+    a::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      transition: all .5s;
+    }
+    a:hover:before{
+      background: rgba(0,0,0,0.8);
+    }
+    a::after{
+      opacity: 0;
+    }
+    a:hover::after{
+      content: 'Veja';
+      display: block;
+      position: absolute;
+      border: 2px solid white;
+      border-radius: 5px;
+      color: white;
+      top: 50%;
+      left: 50%;
+      padding: 10px 20px;
+      transform: translate(-50%, -50%);
+      opacity: 1;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Fotos</h1>
+  <section>
+    <article>
+      <a href="#">
+        <img src="imagens/arvore.webp" alt="arvore no por do sol">
+      </a>
+    </article>
+    
+    <article>
+      <a href="#">
+        <img src="imagens/arvore.webp" alt="arvore no por do sol">
+      </a>
+    </article>
+
+    <article>
+      <a href="#">
+        <img src="imagens/arvore.webp" alt="arvore no por do sol">
+      </a>
+    </article>
+    
+    <article>
+      <a href="#">
+        <img src="imagens/arvore.webp" alt="arvore no por do sol">
+      </a>
+    </article>
+    
+    <article>
+      <a href="#">
+        <img src="imagens/arvore.webp" alt="arvore no por do sol">
+      </a>
+    </article>
+  </section>
+</body>
+</html>
